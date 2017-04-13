@@ -14,6 +14,8 @@
     * js
   * [iblocks](#struc-iblocks)
   * [languages](#struc-languages)
+    * ru
+    * en
   * [layouts](#struc-layouts)
   * [modules](#struc-modules)
   * [theme.json](#struc-manifest)
@@ -23,34 +25,34 @@
   * [composer.json](#struc-composer)
 
 <a name="struc-theme"></a>
-**theme-name** - 
+**theme-name** - Идентификатор темы и имя папки, может содержать только латинские буквы в нижнем регистре, цифры и тире.
 
 <a name="struc-assets"></a>
-**assets** - 
+**assets** - Папка со стилями, скриптами и картинками. Так же можно хранить сырые данные для препроцессоров.
 
 <a name="struc-iblocks"></a>
-**iblocks** - 
+**iblocks** - Инфоблоки, связанные с темой или только их шаблоны. Необязательная папка, создается автоматически при необходимости.
 
 <a name="struc-languages"></a>
-**languages** - 
+**languages** - Директория для переводов текстов темы, для мультиязычных сайтов, не обязательная.
 
 <a name="struc-layouts"></a>
-**layouts** - 
+**layouts** - Макеты темы. Для дочерней темы не обязательны.
 
 <a name="struc-modules"></a>
-**modules** - 
+**modules** - Содержит замену для представлений модулей, совсем не обязательны.
 
 <a name="struc-manifest"></a>
-**theme.json** - 
+**theme.json** - Манифест темы, содержит информацию, данные и настройки.
 
 <a name="struc-wrapper"></a>
-**page.html** - 
+**page.html** - Главный оберточный файл темы, необязателен для дочерней темы.
 
 <a name="struc-custom"></a>
-**custom.css и custom.js** - 
+**custom.css и custom.js** - Кастомные стили и скрипты темы. Не должны создаваться в публичной теме, что бы не перезаписывались при обновлениях. Создаются только конечными пользователями, при необходимости. Подгружаются автоматически, так что нет необходимости добавлять в манифест.
 
 <a name="struc-composer"></a>
-**composer.json** - 
+**composer.json** - Совсем не обязателен, используется для устновки через композер.
 
 
 <a name="child-themes"></a>
