@@ -1,7 +1,18 @@
 # Темы
 
+* [Установка темы](#installation)
 * [Структура темы](#file-structure)
+* [Манифесты](#theme-manifests)
 * [Дочерние темы](#child-themes)
+
+<a name="installation"></a>
+## Установка темы
+
+Установить тему можо одним из трех способов.
+
+1. Загрузить архив темы в админке, на странице Темы -> Добавить тему
+2. Загрузить архив темы через FTP и распаковав в папку /themes
+3. Запросить с помошью консоли из репозитория композера командой `require vendor/theme-name`
 
 <a name="file-structure"></a>
 ## Структура папки темы
@@ -54,6 +65,106 @@
 <a name="struc-composer"></a>
 **composer.json** - Совсем не обязателен, используется для устновки через композер.
 
+
+<a name="theme-manifests"></a>
+## Манифесты
+
+### theme.json
+
+Пример заполнения данных
+
+```json
+{
+  "info": {
+    "name": "Name of this theme",
+    "description": "Short description for catalog",
+    "version": "1.0",
+    "tags": ["any columns", "gray"],
+    "screenshot": "assets/images/screenshot.jpg",
+    "authors": [
+      {
+        "name": "ThemeMaker",
+        "email": "me@email.com",
+        "homepage": "http://yoursite.org"
+      }
+    ]
+  },
+  "settings": {
+    "image_styles": {
+	     "medium": {
+	       "width": 250,
+	       "height": 200,
+	       "type": "crop_center"
+	     }
+	   },
+    "data_fields": {
+      "map_show": {
+        "type": "yesNo"
+      },
+      "map_type": {
+        "type": "select",
+        "options": ["default", "gmap"]
+      },
+      "logo": {
+        "type": "image"
+      }
+    }
+  },
+  "data": {
+    "phone": "+7(123)45-67-890",
+    "address": "Most Famous st.",
+    "map_show": 1,
+    "map_type": "gmap",
+    "logo": "/themes/default/assets/images/logo.png"
+  },
+  "js": {
+    "bootstrap": [
+      "//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js",
+      "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    ],
+    "lightbox": "//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js",
+    "theme": [
+      "assets/js/main.js"
+    ]
+  },
+  "css": {
+    "bootstrap": "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css",
+    "lightbox": "//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css",
+    "theme": [
+      "assets/css/main.css",
+      "assets/css/color1.css"
+    ]
+  }
+}
+```
+
+Обязательными являются только поля `info.name`, `js` и `css`.
+
+### composer.json
+
+Пример заполнения данных
+
+```json
+{
+  "name": "vendor/theme-name",
+  "description": "Demonstration of theme description",
+  "type": "sydes-theme",
+  "keywords": ["sydes", "theme", "cool-tags"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ThemeMaker",
+      "email": "me@email.com",
+      "homepage": "http://yoursite.org"
+    }
+  ],
+  "require": {
+    "composer/installers": "~1.0"
+  }
+}
+```
+
+Обратите внимание на поля `type` и `require`. Благодаря ним тема после запроса окажется сразу в папке с другими темами.
 
 <a name="child-themes"></a>
 ## Дочерние темы
