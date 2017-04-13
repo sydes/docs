@@ -1,2 +1,3 @@
-# docs
-SyDES Documentation
+# SyDES Documentation
+
+Feel free to read it
