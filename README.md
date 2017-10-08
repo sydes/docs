@@ -1,4 +1,4 @@
 # SyDES Documentation
 
-[English](./en/index.md)
-[Русский](./ru/index.md)
+* [English](./en/index.md)
+* [Русский](./ru/index.md)
