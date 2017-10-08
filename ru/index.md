@@ -10,25 +10,30 @@
 
 ## [Менеджерам](./manager/index.md)
 
-1. [Модуль "Страницы"](./manager/pages.md)
-2. [Модуль "Контент"](./manager/content.md)
-3. [Модуль "Менеджер файлов"](./manager/file-manager.md)
-4. [Модуль "Конструктор форм"](./manager/form-constructor.md)
-5. [Настройка профиля](./manager/profile.md)
-6. [Настройка приложения](./manager/settings.md)
-7. [Настройка сайта](./manager/sites.md)
-8. [Использование расширений](./manager/extensions.md)
-9. [Использование темы](./manager/themes.md)
-10. [Использование инфоблоков](./manager/iblocks.md)
+1. Модули
+    * [Страницы](./manager/pages.md)
+    * [Контент](./manager/content.md)
+    * [Менеджер файлов](./manager/file-manager.md)
+    * [Конструктор форм](./manager/form-constructor.md)
+2. Настройка
+    * [Приложения](./manager/settings.md)
+    * [Сайта](./manager/sites.md)
+    * [Профиля](./manager/profile.md)
+3. Использование и настройка
+    * [Расширений](./manager/extensions.md)
+    * [Инфоблоков](./manager/iblocks.md)
+    * [Темы](./manager/themes.md)
 
 ## [Разработчикам](./developer/index.md)
 
 1. [Структура файлов](./developer/structure.md)
-2. [Создание темы](./developer/themes.md)
-3. [Создание модулей](./developer/modules.md)
-4. [Создание инфоблоков](./developer/iblocks.md)
-5. [Создание плагинов](./developer/plugins.md)
-6. [Локализация](./developer/localization.md)
-7. [Справочник по фреймворку](./developer/framework/index.md)
-8. [Справочник по модулям](./developer/modules/index.md)
-9. [Справочник по api.sydes.ru](./developer/sydes-api/index.md)
+2. Создание
+    * [Темы](./developer/themes.md)
+    * [Модулей](./developer/modules.md)
+    * [Инфоблоков](./developer/iblocks.md)
+    * [Плагинов](./developer/plugins.md)
+3. [Локализация](./developer/localization.md)
+4. Справочники
+    * [По фреймворку](./developer/framework/index.md)
+    * [По модулям](./developer/modules/index.md)
+    * [По api.sydes.ru](./developer/sydes-api/index.md)
