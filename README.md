@@ -1,3 +1,4 @@
 # SyDES Documentation
 
-Feel free to read it
+[English](./en/index.md)
+[Русский](./ru/index.md)

@@ -1,4 +1,4 @@
-# Функции JavaScript
+# JavaScript функции модуля Main
 
 ## Методы Syd
 
